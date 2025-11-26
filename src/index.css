@@ -1,95 +1,95 @@
- /* Global Styles */
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f4f6f8;
+ /* Reset and Base */
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #333;
 }
 
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #e0f7fa, #fce4ec);
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+  padding-bottom: 40px;
+}
+
+/* Header */
 h1 {
   text-align: center;
-  margin-top: 30px;
-  font-size: 32px;
-  color: #222;
+  font-size: 36px;
+  margin: 40px 0 20px;
+  color: #2c3e50;
+}
+
+/* Container */
+.container {
+  padding: 0 20px;
 }
 
 /* Form Styling */
 form {
   background-color: #ffffff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 20px;
-  margin: 20px auto;
-  max-width: 600px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  max-width: 700px;
+  margin: 0 auto 30px;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
 }
 
+/* Inputs */
 input[type="text"],
 input[type="file"],
 textarea {
   width: 100%;
-  padding: 10px;
-  margin-top: 10px;
-  margin-bottom: 15px;
+  padding: 12px;
+  margin-bottom: 20px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 6px;
   font-size: 16px;
 }
 
-/* Button Styling */
+/* Buttons */
 button {
-  background-color: #007bff;
+  background-color: #ff4081;
   color: white;
   border: none;
-  padding: 8px 16px;
-  border-radius: 4px;
+  padding: 10px 18px;
+  border-radius: 6px;
   cursor: pointer;
+  font-size: 15px;
   margin-right: 10px;
-  margin-top: 10px;
-  font-size: 14px;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #e91e63;
 }
 
-/* Post Card Styling */
+/* Post Card */
 .post {
   background-color: #ffffff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
+  max-width: 700px;
+  margin: 0 auto 20px;
   padding: 20px;
-  margin: 20px auto;
-  max-width: 600px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
 }
 
 .post h2 {
-  margin-top: 0;
   font-size: 24px;
-  color: #333;
+  margin-bottom: 10px;
+  color: #34495e;
 }
 
 .post img {
   max-width: 100%;
-  border-radius: 6px;
+  border-radius: 8px;
   margin-top: 10px;
 }
 
-/* Edit Mode Styling */
+/* Edit Mode */
 textarea {
-  height: 100px;
   resize: vertical;
-}
-textarea {
-  width: 100%;
   height: 120px;
-  padding: 10px;
-  margin-top: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-  resize: vertical;
 }
